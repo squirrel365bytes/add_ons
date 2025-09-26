@@ -1,0 +1,21 @@
+[
+  {
+    "type": "Accordion",
+    "properties": {
+      "name": "General",
+      "collapsed": false
+    },
+    "children": [
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "SVG Code",
+          "allowBinding": true,
+          "allowManualEntry": true,
+          "textArea": true,
+          "bindingPropertyName": "svgCode"
+        }
+      }
+    ]
+  }
+]
