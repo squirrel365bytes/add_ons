@@ -1,0 +1,11 @@
+{
+  "value": 56,
+  "direction": "bottom-up",
+  "filledColor": "#0197FF",
+  "emptyColor": "#e5e7eb",
+  "cornerRadius": 0,
+  "outerSpacing": 0,
+  "boxGap": 2,
+  "interactive": true,
+  "buildVersion": "v13"
+}

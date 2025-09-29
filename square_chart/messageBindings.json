@@ -1,0 +1,34 @@
+[
+  {
+    "property": "value",
+    "direction": "receive"
+  },
+  {
+    "property": "direction",
+    "direction": "receive"
+  },
+  {
+    "property": "filledColor",
+    "direction": "receive"
+  },
+  {
+    "property": "emptyColor",
+    "direction": "receive"
+  },
+  {
+    "property": "cornerRadius",
+    "direction": "receive"
+  },
+  {
+    "property": "outerSpacing",
+    "direction": "receive"
+  },
+  {
+    "property": "boxGap",
+    "direction": "receive"
+  },
+  {
+    "property": "interactive",
+    "direction": "receive"
+  }
+]

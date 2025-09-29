@@ -1,0 +1,92 @@
+[
+  {
+    "type": "Accordion",
+    "properties": {
+      "name": "General",
+      "collapsed": false
+    },
+    "children": [
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Value (0\u2013100):",
+          "allowBinding": true,
+          "allowManualEntry": true,
+          "bindingPropertyName": "value"
+        }
+      },
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Direction (bottom-up | top-down):",
+          "allowBinding": true,
+          "allowManualEntry": true,
+          "bindingPropertyName": "direction"
+        }
+      },
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Filled color (hex):",
+          "allowBinding": true,
+          "allowManualEntry": true,
+          "bindingPropertyName": "filledColor"
+        }
+      },
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Empty color (hex):",
+          "allowBinding": true,
+          "allowManualEntry": true,
+          "bindingPropertyName": "emptyColor"
+        }
+      },
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Corner radius (px):",
+          "allowBinding": true,
+          "allowManualEntry": true,
+          "bindingPropertyName": "cornerRadius"
+        }
+      },
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Outer spacing (px):",
+          "allowBinding": true,
+          "allowManualEntry": true,
+          "bindingPropertyName": "outerSpacing"
+        }
+      },
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Box gap (px):",
+          "allowBinding": true,
+          "allowManualEntry": true,
+          "bindingPropertyName": "boxGap"
+        }
+      }
+    ]
+  },
+  {
+    "type": "Accordion",
+    "properties": {
+      "name": "About",
+      "collapsed": true
+    },
+    "children": [
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Build version:",
+          "allowBinding": false,
+          "allowManualEntry": false,
+          "bindingPropertyName": "buildVersion"
+        }
+      }
+    ]
+  }
+]
