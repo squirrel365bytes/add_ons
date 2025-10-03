@@ -1,0 +1,38 @@
+[
+  {
+    "property": "dataRange",
+    "direction": "receive"
+  },
+  {
+    "property": "minColorPicker",
+    "direction": "receive"
+  },
+  {
+    "property": "maxColorPicker",
+    "direction": "receive"
+  },
+  {
+    "property": "unfilledColorPicker",
+    "direction": "receive"
+  },
+  {
+    "property": "showLegend",
+    "direction": "receive"
+  },
+  {
+    "property": "showMonths",
+    "direction": "receive"
+  },
+  {
+    "property": "showWeekdays",
+    "direction": "receive"
+  },
+  {
+    "property": "minScale",
+    "direction": "receive"
+  },
+  {
+    "property": "maxScale",
+    "direction": "receive"
+  }
+]

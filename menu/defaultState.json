@@ -1,0 +1,61 @@
+{
+  "dataRange": [
+    [
+      "Dashboard",
+      "",
+      "home"
+    ],
+    [
+      "Mailbox",
+      "",
+      "mail"
+    ],
+    [
+      "Layout Options",
+      "Grid",
+      "folder"
+    ],
+    [
+      "Layout Options",
+      "Masonry",
+      "folder"
+    ],
+    [
+      "Widgets",
+      "",
+      "folder"
+    ],
+    [
+      "Calendar",
+      "",
+      "calendar"
+    ],
+    [
+      "Examples",
+      "UI Elements",
+      "folder"
+    ],
+    [
+      "Examples",
+      "Charts",
+      "chart"
+    ],
+    [
+      "Examples",
+      "Tables",
+      "table"
+    ]
+  ],
+  "selectedOutput": "",
+  "topLevelTextHex": "#111827",
+  "topLevelIconHex": "#111827",
+  "childTextHex": "#374151",
+  "childIconHex": "#374151",
+  "hoverBgHex": "#f3f4f6",
+  "hoverBgPicker": "#f3f4f6",
+  "hoverTextHex": "#111827",
+  "hoverTextPicker": "#111827",
+  "responsiveThreshold": 100,
+  "animateWidth": true,
+  "overrideIconColor": false
+}

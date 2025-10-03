@@ -1,0 +1,54 @@
+[
+  {
+    "property": "dataRange",
+    "direction": "receive"
+  },
+  {
+    "property": "selectedOutput",
+    "direction": "send"
+  },
+  {
+    "property": "topLevelTextHex",
+    "direction": "receive"
+  },
+  {
+    "property": "topLevelIconHex",
+    "direction": "receive"
+  },
+  {
+    "property": "childTextHex",
+    "direction": "receive"
+  },
+  {
+    "property": "childIconHex",
+    "direction": "receive"
+  },
+  {
+    "property": "hoverBgHex",
+    "direction": "receive"
+  },
+  {
+    "property": "hoverBgPicker",
+    "direction": "receive"
+  },
+  {
+    "property": "hoverTextHex",
+    "direction": "receive"
+  },
+  {
+    "property": "hoverTextPicker",
+    "direction": "receive"
+  },
+  {
+    "property": "responsiveThreshold",
+    "direction": "receive"
+  },
+  {
+    "property": "animateWidth",
+    "direction": "receive"
+  },
+  {
+    "property": "overrideIconColor",
+    "direction": "receive"
+  }
+]

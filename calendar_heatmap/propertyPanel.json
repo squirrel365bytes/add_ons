@@ -1,0 +1,118 @@
+[
+  {
+    "type": "Accordion",
+    "properties": {
+      "name": "Bindings",
+      "collapsed": false
+    },
+    "children": [
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Date & Value (2 columns)",
+          "allowBinding": true,
+          "allowManualEntry": true,
+          "textArea": false,
+          "bindingPropertyName": "dataRange"
+        }
+      }
+    ]
+  },
+  {
+    "type": "Accordion",
+    "properties": {
+      "name": "Options",
+      "collapsed": false
+    },
+    "children": [
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Low color",
+          "allowBinding": true,
+          "allowManualEntry": true,
+          "textArea": false,
+          "inputType": "color",
+          "bindingPropertyName": "minColorPicker"
+        }
+      },
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "High color",
+          "allowBinding": true,
+          "allowManualEntry": true,
+          "textArea": false,
+          "inputType": "color",
+          "bindingPropertyName": "maxColorPicker"
+        }
+      },
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Unfilled color",
+          "allowBinding": true,
+          "allowManualEntry": true,
+          "textArea": false,
+          "inputType": "color",
+          "bindingPropertyName": "unfilledColorPicker"
+        }
+      },
+      {
+        "type": "Checkbox",
+        "properties": {
+          "labelName": "Show legend",
+          "allowBinding": true,
+          "bindingPropertyName": "showLegend"
+        }
+      },
+      {
+        "type": "Checkbox",
+        "properties": {
+          "labelName": "Show month labels",
+          "allowBinding": true,
+          "bindingPropertyName": "showMonths"
+        }
+      },
+      {
+        "type": "Checkbox",
+        "properties": {
+          "labelName": "Show weekday labels",
+          "allowBinding": true,
+          "bindingPropertyName": "showWeekdays"
+        }
+      }
+    ]
+  },
+  {
+    "type": "Accordion",
+    "properties": {
+      "name": "Scale (optional)",
+      "collapsed": false
+    },
+    "children": [
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Min scale",
+          "allowBinding": true,
+          "allowManualEntry": true,
+          "textArea": false,
+          "inputType": "number",
+          "bindingPropertyName": "minScale"
+        }
+      },
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Max scale",
+          "allowBinding": true,
+          "allowManualEntry": true,
+          "textArea": false,
+          "inputType": "number",
+          "bindingPropertyName": "maxScale"
+        }
+      }
+    ]
+  }
+]

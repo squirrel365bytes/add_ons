@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>SquirrelAddon menu_bootstrap</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script defer src="./scripts/squirrel-helper.js"></script>
+  <script defer src="./scripts/app.js?v=16"></script>
+  <style>
+    html, body { height: 100%; margin: 0; }
+    body { padding: 0; display: block; background: transparent; }
+    #menu_host { width:100%; height:100%; box-sizing:border-box; display:block; background:transparent; }
+    #menu_root { width:100%; height:100%; display:flex; flex-direction:column; gap:6px; overflow:auto; background:transparent; }
+    :root{
+      --top-text:#111827;
+      --top-icon:#111827;
+      --child-text:#374151;
+      --child-icon:#374151;
+      --hover-bg:#f3f4f6;
+      --hover-text:#111827;
+      --anim-ms:250ms;
+    }
+    .menu-group{border-radius:10px;background:transparent;}
+    .menu-top{display:flex;align-items:center;gap:10px;padding:10px 12px;cursor:pointer;color:var(--top-text);user-select:none;transition:background var(--anim-ms),color var(--anim-ms);}
+    .menu-top:hover{background:var(--hover-bg); color:var(--hover-text);}
+    .menu-top .icon{width:18px;height:18px;flex:0 0 18px;color:var(--top-icon);transition:transform var(--anim-ms);}
+    .menu-title{flex:1 1 auto;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+    .caret{width:12px;height:12px;transition:transform var(--anim-ms);}
+    .menu-group.open .caret{transform:rotate(90deg);}
+    .submenu{overflow:hidden;max-height:0;opacity:0;transition:max-height var(--anim-ms) ease, opacity var(--anim-ms) ease;margin-left:34px;border-left:1px dashed rgba(0,0,0,.1);}
+    .menu-group.open .submenu{max-height:500px;opacity:1;}
+    .submenu-item{display:flex;align-items:center;gap:10px;padding:8px 12px;cursor:pointer;color:var(--child-text);transition:background var(--anim-ms),color var(--anim-ms);}
+    .submenu-item:hover{background:var(--hover-bg); color:var(--hover-text);}
+    .submenu-item .icon{width:16px;height:16px;color:var(--child-icon);flex:0 0 16px;}
+    .icon-only .menu-title,.icon-only .caret{display:none;}
+    .icon-only .menu-top{justify-content:center;}
+    .icon-only .submenu{display:none;}
+    .icon-only .menu-top .icon{width:22px;height:22px;}
+    .force-icon-color .icon, .force-icon-color .icon *{ fill: currentColor !important; stroke: currentColor !important; }
+  </style>
+</head>
+<body>
+  <div id="menu_host"><div id="menu_root"></div></div>
+</body>
+</html>

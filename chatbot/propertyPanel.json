@@ -1,0 +1,194 @@
+[
+  {
+    "type": "Accordion",
+    "properties": {
+      "name": "Bindings",
+      "collapsed": false
+    },
+    "children": [
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Knowledge table (2\u20138 columns)",
+          "allowBinding": true,
+          "allowManualEntry": false,
+          "bindingPropertyName": "dataRange",
+          "help": "A terms | B response | (C label, D detail) | (E label, F detail) | (G label, H detail)."
+        }
+      },
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "User input (output)",
+          "allowBinding": true,
+          "allowManualEntry": false,
+          "bindingPropertyName": "userInputOut"
+        }
+      },
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Selected response (output)",
+          "allowBinding": true,
+          "allowManualEntry": false,
+          "bindingPropertyName": "selectedResponseOut"
+        }
+      },
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Matched row # (output)",
+          "allowBinding": true,
+          "allowManualEntry": false,
+          "bindingPropertyName": "matchedRowOut"
+        }
+      },
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Match score (output)",
+          "allowBinding": true,
+          "allowManualEntry": false,
+          "bindingPropertyName": "matchedScoreOut"
+        }
+      },
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Clicked summary label (output)",
+          "allowBinding": true,
+          "allowManualEntry": false,
+          "bindingPropertyName": "clickedSummaryOut"
+        }
+      }
+    ]
+  },
+  {
+    "type": "Accordion",
+    "properties": {
+      "name": "Appearance",
+      "collapsed": false
+    },
+    "children": [
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Placeholder text",
+          "allowBinding": false,
+          "allowManualEntry": true,
+          "bindingPropertyName": "placeholder"
+        }
+      },
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Initial greeting",
+          "allowBinding": false,
+          "allowManualEntry": true,
+          "bindingPropertyName": "greeting"
+        }
+      },
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Font color (hex)",
+          "allowBinding": true,
+          "allowManualEntry": true,
+          "bindingPropertyName": "fontColor"
+        }
+      },
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Bot bubble color (hex)",
+          "allowBinding": true,
+          "allowManualEntry": true,
+          "bindingPropertyName": "botBg"
+        }
+      },
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Bot text color (hex)",
+          "allowBinding": true,
+          "allowManualEntry": true,
+          "bindingPropertyName": "botText"
+        }
+      },
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "User bubble color (hex)",
+          "allowBinding": true,
+          "allowManualEntry": true,
+          "bindingPropertyName": "userBg"
+        }
+      },
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "User text color (hex)",
+          "allowBinding": true,
+          "allowManualEntry": true,
+          "bindingPropertyName": "userText"
+        }
+      },
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Button color (hex)",
+          "allowBinding": true,
+          "allowManualEntry": true,
+          "bindingPropertyName": "btnBg"
+        }
+      },
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Button text (hex)",
+          "allowBinding": true,
+          "allowManualEntry": true,
+          "bindingPropertyName": "btnText"
+        }
+      },
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Accent (send) hex",
+          "allowBinding": true,
+          "allowManualEntry": true,
+          "bindingPropertyName": "accent"
+        }
+      }
+    ]
+  },
+  {
+    "type": "Accordion",
+    "properties": {
+      "name": "Avatar",
+      "collapsed": false
+    },
+    "children": [
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Avatar SVG (inline)",
+          "allowBinding": false,
+          "allowManualEntry": true,
+          "textArea": true,
+          "bindingPropertyName": "avatarSvg",
+          "help": "Paste a full <svg>\u2026</svg>. If empty, a \ud83e\udd16 is used."
+        }
+      },
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Avatar circle bg (hex)",
+          "allowBinding": true,
+          "allowManualEntry": true,
+          "bindingPropertyName": "avatarBg"
+        }
+      }
+    ]
+  }
+]

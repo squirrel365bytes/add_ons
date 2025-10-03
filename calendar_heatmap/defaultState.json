@@ -1,0 +1,11 @@
+{
+  "dataRange": "",
+  "minColorPicker": "#e5e7eb",
+  "maxColorPicker": "#0197FF",
+  "unfilledColorPicker": "#f3f4f6",
+  "showLegend": false,
+  "showMonths": false,
+  "showWeekdays": false,
+  "minScale": "",
+  "maxScale": ""
+}

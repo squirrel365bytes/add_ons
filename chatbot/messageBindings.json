@@ -1,0 +1,62 @@
+[
+  {
+    "property": "dataRange",
+    "direction": "receive"
+  },
+  {
+    "property": "fontColor",
+    "direction": "receive"
+  },
+  {
+    "property": "botBg",
+    "direction": "receive"
+  },
+  {
+    "property": "botText",
+    "direction": "receive"
+  },
+  {
+    "property": "userBg",
+    "direction": "receive"
+  },
+  {
+    "property": "userText",
+    "direction": "receive"
+  },
+  {
+    "property": "btnBg",
+    "direction": "receive"
+  },
+  {
+    "property": "btnText",
+    "direction": "receive"
+  },
+  {
+    "property": "accent",
+    "direction": "receive"
+  },
+  {
+    "property": "avatarBg",
+    "direction": "receive"
+  },
+  {
+    "property": "userInputOut",
+    "direction": "send"
+  },
+  {
+    "property": "selectedResponseOut",
+    "direction": "send"
+  },
+  {
+    "property": "matchedRowOut",
+    "direction": "send"
+  },
+  {
+    "property": "matchedScoreOut",
+    "direction": "send"
+  },
+  {
+    "property": "clickedSummaryOut",
+    "direction": "send"
+  }
+]

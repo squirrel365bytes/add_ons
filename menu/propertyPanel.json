@@ -1,0 +1,146 @@
+[
+  {
+    "type": "Accordion",
+    "properties": {
+      "name": "Bindings",
+      "collapsed": false
+    },
+    "children": [
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Menu data (3 cols: Menu, Content, Icon)",
+          "allowBinding": true,
+          "allowManualEntry": false,
+          "bindingPropertyName": "dataRange"
+        }
+      },
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Selected item (output)",
+          "allowBinding": true,
+          "allowManualEntry": false,
+          "bindingPropertyName": "selectedOutput"
+        }
+      }
+    ]
+  },
+  {
+    "type": "Accordion",
+    "properties": {
+      "name": "Colors",
+      "collapsed": false
+    },
+    "children": [
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Top-level text (hex)",
+          "allowBinding": true,
+          "allowManualEntry": true,
+          "bindingPropertyName": "topLevelTextHex"
+        }
+      },
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Top-level icon (hex)",
+          "allowBinding": true,
+          "allowManualEntry": true,
+          "bindingPropertyName": "topLevelIconHex"
+        }
+      },
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Content text (hex)",
+          "allowBinding": true,
+          "allowManualEntry": true,
+          "bindingPropertyName": "childTextHex"
+        }
+      },
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Content icon (hex)",
+          "allowBinding": true,
+          "allowManualEntry": true,
+          "bindingPropertyName": "childIconHex"
+        }
+      },
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Hover background (hex)",
+          "allowBinding": true,
+          "allowManualEntry": true,
+          "bindingPropertyName": "hoverBgHex"
+        }
+      },
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Hover background (picker)",
+          "allowBinding": true,
+          "allowManualEntry": true,
+          "bindingPropertyName": "hoverBgPicker"
+        }
+      },
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Hover text (hex)",
+          "allowBinding": true,
+          "allowManualEntry": true,
+          "bindingPropertyName": "hoverTextHex"
+        }
+      },
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Hover text (picker)",
+          "allowBinding": true,
+          "allowManualEntry": true,
+          "bindingPropertyName": "hoverTextPicker"
+        }
+      }
+    ]
+  },
+  {
+    "type": "Accordion",
+    "properties": {
+      "name": "Options",
+      "collapsed": false
+    },
+    "children": [
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Icon-only width threshold (px)",
+          "allowBinding": true,
+          "allowManualEntry": true,
+          "bindingPropertyName": "responsiveThreshold"
+        }
+      },
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Animate open/close on width change (true/false)",
+          "allowBinding": true,
+          "allowManualEntry": true,
+          "bindingPropertyName": "animateWidth"
+        }
+      },
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Override all SVG colors with icon color (true/false)",
+          "allowBinding": true,
+          "allowManualEntry": true,
+          "bindingPropertyName": "overrideIconColor"
+        }
+      }
+    ]
+  }
+]

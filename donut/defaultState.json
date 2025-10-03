@@ -1,0 +1,53 @@
+{
+  "dataRange": [
+    [
+      "Alpha",
+      50
+    ],
+    [
+      "Beta",
+      25
+    ],
+    [
+      "Gamma",
+      15
+    ],
+    [
+      "Delta",
+      10
+    ]
+  ],
+  "colorRange": [
+    [
+      "#9FDB67"
+    ],
+    [
+      "#42BE95"
+    ],
+    [
+      "#70E6E0"
+    ],
+    [
+      "#114FA2"
+    ],
+    [
+      "#FFDE48"
+    ]
+  ],
+  "selectedSeries": "",
+  "hoverSeries": "",
+  "style": "full",
+  "innerHoleSize": 0.62,
+  "showTooltips": true,
+  "showBorder": true,
+  "borderColor": "#FFFFFF",
+  "borderWidth": 2,
+  "showNeedle": false,
+  "needleStyle": "simple",
+  "needleValue": 0,
+  "needleMode": "raw",
+  "needleColor": "#111111",
+  "simpleNeedleWidth": 14,
+  "simpleNeedleLength": 0.8,
+  "buildVersion": "v28"
+}
