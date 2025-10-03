@@ -19,6 +19,15 @@
       {
         "type": "InputBox",
         "properties": {
+          "labelName": "No-match response",
+          "allowBinding": true,
+          "allowManualEntry": true,
+          "bindingPropertyName": "noMatchText"
+        }
+      },
+      {
+        "type": "InputBox",
+        "properties": {
           "labelName": "User input (output)",
           "allowBinding": true,
           "allowManualEntry": false,
