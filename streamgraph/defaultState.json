@@ -1,0 +1,16 @@
+{
+  "dataRange": [],
+  "colorsText": "#9FDB67,#42BE95,#70E6E0,#114FA2,#FFDE48,#0197FF,#6AD1F0,#7C8CFF,#B388FF",
+  "scheme": "tableau10",
+  "curve": "catmullRom",
+  "offset": "wiggle",
+  "order": "insideOut",
+  "showXAxis": true,
+  "showYAxis": true,
+  "showLabels": false,
+  "axisXColor": "#4B5563",
+  "axisYColor": "#4B5563",
+  "labelScale": false,
+  "labelMinFont": 10,
+  "labelMaxFont": 24
+}

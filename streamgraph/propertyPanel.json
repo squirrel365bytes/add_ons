@@ -1,0 +1,148 @@
+[
+  {
+    "type": "Accordion",
+    "properties": {
+      "name": "Bindings",
+      "collapsed": false
+    },
+    "children": [
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Data range (3 cols: Date, Series, Value)",
+          "allowBinding": true,
+          "allowManualEntry": true,
+          "bindingPropertyName": "dataRange",
+          "help": "Bind 3 columns: Date, Series, Value. Dates can be Excel serials or formatted strings."
+        }
+      },
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Colors (comma-separated hex list or bound cell range)",
+          "allowBinding": true,
+          "allowManualEntry": true,
+          "bindingPropertyName": "colorsText",
+          "help": "e.g. #9FDB67,#42BE95,#70E6E0,#114FA2,#FFDE48,#0197FF,#6AD1F0,#7C8CFF,#B388FF"
+        }
+      }
+    ]
+  },
+  {
+    "type": "Accordion",
+    "properties": {
+      "name": "Options",
+      "collapsed": false
+    },
+    "children": [
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Color scheme (fallback)",
+          "allowBinding": true,
+          "allowManualEntry": true,
+          "bindingPropertyName": "scheme"
+        }
+      },
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Curve (catmullRom|basis|natural|linear)",
+          "allowBinding": true,
+          "allowManualEntry": true,
+          "bindingPropertyName": "curve"
+        }
+      },
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Offset (wiggle|silhouette|expand|none)",
+          "allowBinding": true,
+          "allowManualEntry": true,
+          "bindingPropertyName": "offset"
+        }
+      },
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Order (insideOut|ascending|descending)",
+          "allowBinding": true,
+          "allowManualEntry": true,
+          "bindingPropertyName": "order"
+        }
+      },
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Show X Axis (true/false)",
+          "allowBinding": true,
+          "allowManualEntry": true,
+          "bindingPropertyName": "showXAxis"
+        }
+      },
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Show Y Axis (true/false)",
+          "allowBinding": true,
+          "allowManualEntry": true,
+          "bindingPropertyName": "showYAxis"
+        }
+      },
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Inline Labels (true/false)",
+          "allowBinding": true,
+          "allowManualEntry": true,
+          "bindingPropertyName": "showLabels"
+        }
+      },
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Axis X Font Color (hex)",
+          "allowBinding": true,
+          "allowManualEntry": true,
+          "bindingPropertyName": "axisXColor"
+        }
+      },
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Axis Y Font Color (hex)",
+          "allowBinding": true,
+          "allowManualEntry": true,
+          "bindingPropertyName": "axisYColor"
+        }
+      },
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Scale Label Font (true/false)",
+          "allowBinding": true,
+          "allowManualEntry": true,
+          "bindingPropertyName": "labelScale"
+        }
+      },
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Label Min Font px (e.g., 10)",
+          "allowBinding": true,
+          "allowManualEntry": true,
+          "bindingPropertyName": "labelMinFont"
+        }
+      },
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Label Max Font px (e.g., 24)",
+          "allowBinding": true,
+          "allowManualEntry": true,
+          "bindingPropertyName": "labelMaxFont"
+        }
+      }
+    ]
+  }
+]

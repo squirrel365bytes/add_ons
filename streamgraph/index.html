@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Squirrel Add-on • Streamgraph v3</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script defer src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+  <script defer src="./scripts/squirrel-helper.js"></script>
+  <script defer src="./scripts/app.js"></script>
+  <style>
+    html, body { height:100%; margin:0; }
+    body { padding:0; display:block; background:transparent; }
+    #host { width:100%; height:100%; box-sizing:border-box; padding:0; }
+    #chart { width:100%; height:100%; }
+    .tooltip { position:fixed; pointer-events:none; background:rgba(12,18,32,.95); color:#e6edf3; padding:8px 10px; border:1px solid rgba(255,255,255,.08); border-radius:8px; font-size:12px; transform:translate(-50%,-140%); }
+    .axis path, .axis line { stroke: rgba(0,0,0,.2); }
+    .layer { opacity:.9; transition:opacity .15s ease; }
+    .layer.faded { opacity:.25; }
+    .label { fill:#e6edf3; pointer-events:none; text-anchor:middle; paint-order:stroke; stroke:#0b0f14; stroke-width:3px; }
+  </style>
+</head>
+<body>
+  <div id="host"><div id="chart"></div><div id="tooltip" class="tooltip" style="opacity:0"></div></div>
+</body>
+</html>

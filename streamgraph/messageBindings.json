@@ -1,0 +1,58 @@
+[
+  {
+    "property": "dataRange",
+    "direction": "receive"
+  },
+  {
+    "property": "colorsText",
+    "direction": "receive"
+  },
+  {
+    "property": "scheme",
+    "direction": "receive"
+  },
+  {
+    "property": "curve",
+    "direction": "receive"
+  },
+  {
+    "property": "offset",
+    "direction": "receive"
+  },
+  {
+    "property": "order",
+    "direction": "receive"
+  },
+  {
+    "property": "showXAxis",
+    "direction": "receive"
+  },
+  {
+    "property": "showYAxis",
+    "direction": "receive"
+  },
+  {
+    "property": "showLabels",
+    "direction": "receive"
+  },
+  {
+    "property": "axisXColor",
+    "direction": "receive"
+  },
+  {
+    "property": "axisYColor",
+    "direction": "receive"
+  },
+  {
+    "property": "labelScale",
+    "direction": "receive"
+  },
+  {
+    "property": "labelMinFont",
+    "direction": "receive"
+  },
+  {
+    "property": "labelMaxFont",
+    "direction": "receive"
+  }
+]
