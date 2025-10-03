@@ -8,7 +8,32 @@
   });
   Squirrel.initWithSquirrel();
 
-  let state = {"dataRange": [["Alpha", 50], ["Beta", 25], ["Gamma", 15], ["Delta", 10]], "colorRange": [["#9FDB67"], ["#42BE95"], ["#70E6E0"], ["#114FA2"], ["#FFDE48"]], "selectedSeries": "", "hoverSeries": "", "style": "full", "innerHoleSize": 0.62, "showTooltips": true, "showBorder": true, "borderColor": "#FFFFFF", "borderWidth": 2, "showNeedle": false, "needleStyle": "simple", "needleValue": 0, "needleMode": "raw", "needleColor": "#111111", "simpleNeedleWidth": 14, "simpleNeedleLength": 0.8, "buildVersion": "v28"};
+  let state = {
+    dataRange: [["Alpha", 50], ["Beta", 25], ["Gamma", 15], ["Delta", 10]],
+    colorRange: [
+      ["#9FDB67"],
+      ["#42BE95"],
+      ["#70E6E0"],
+      ["#114FA2"],
+      ["#FFDE48"]
+    ],
+    selectedSeries: "",
+    hoverSeries: "",
+    style: "full",
+    innerHoleSize: 0.62,
+    showTooltips: true,
+    showBorder: true,
+    borderColor: "#FFFFFF",
+    borderWidth: 2,
+    showNeedle: false,
+    needleStyle: "simple", // simple | classic
+    needleValue: 0,
+    needleMode: "raw", // raw | percent
+    needleColor: "#111111",
+    simpleNeedleWidth: 14,   // px
+    simpleNeedleLength: 0.8, // fraction of radius
+    buildVersion: "v27"
+  };
 
   const root = () => document.getElementById('chart');
   const truthy = new Set(['true','1','yes','on','y','t']);
@@ -18,9 +43,9 @@
 
   function getStyleConfig(style){
     const s = String(style||'full').toLowerCase();
-    if (s === 'top-half')   return { key: 'top',    start: Math.PI,       span: Math.PI };
-    if (s === 'bottom-half')return { key: 'bottom', start: 0,             span: Math.PI };
-    return { key: 'full', start: -Math.PI/2, span: Math.PI*2 };
+    if (s === 'top-half')   return { start: Math.PI,       span: Math.PI };
+    if (s === 'bottom-half')return { start: 0,             span: Math.PI };
+    return { start: -Math.PI/2, span: Math.PI*2 };
   }
 
   function arcPath(cx, cy, R, r, a0, a1){
@@ -55,30 +80,17 @@
     return total ? (v / total) : 0;
   }
 
-  function layoutForStyle(w,h,styleKey){
-    const pad = 0.96;
-    if (styleKey === 'full') {
-      const R = Math.min(w,h) * (pad/2);
-      const cx = w/2, cy = h/2;
-      return {cx, cy, R};
-    }
-    const R = Math.min(h*pad, (w*pad)/2);
-    const cx = w/2;
-    const cy = (styleKey === 'top') ? R : (h - R);
-    return {cx, cy, R};
-  }
-
   function render(){
     const el=root(); if(!el) return;
     const sz=Squirrel.getSize?.()||{width:el.clientWidth,height:el.clientHeight};
     const w=Math.max(40,sz.width||300), h=Math.max(40,sz.height||200);
 
-    const cfg = getStyleConfig(state.style);
-    const {cx, cy, R} = layoutForStyle(w,h,cfg.key);
+    const {start, span} = getStyleConfig(state.style);
+    const cx=w/2, cy=h/2;
+    const R = Math.min(w,h) * 0.48;
     const holeRatio = (state.innerHoleSize === "" || state.innerHoleSize === null || isNaN(+state.innerHoleSize))
       ? 0.62 : Math.max(0.2, Math.min(0.9, +state.innerHoleSize));
     const r = R * holeRatio;
-    const start = cfg.start, span = cfg.span;
 
     const data = coerceData(state.dataRange);
     const total = data.reduce((s,d)=>s+d[1],0) || 1;
@@ -92,6 +104,7 @@
     let svg = `<svg xmlns='http://www.w3.org/2000/svg' width='${w}' height='${h}' viewBox='0 0 ${w} ${h}'>`;
     let angle = start;
 
+    // slices
     data.forEach((d,i)=>{
       const frac = d[1] / total;
       const slice = span * frac;
@@ -105,6 +118,7 @@
       angle = a1;
     });
 
+    // needle (seamless with hub)
     if (toBool(state.showNeedle)) {
       const frac = percentFromNeedle(+state.needleValue || 0, state.needleMode, total);
       const theta = start + span * frac;
@@ -132,7 +146,7 @@
         const outer = R * length;
         let halfW;
         if (state.simpleNeedleWidth === "" || state.simpleNeedleWidth === null || isNaN(+state.simpleNeedleWidth)) {
-          halfW = (Math.max(1, Math.min(10, 14))) / 2;
+          halfW = (Math.max(1, Math.min(10, 14))) / 2; // default 14px -> 7
         } else {
           const widthPx = Math.max(1, Math.min(10, +state.simpleNeedleWidth));
           halfW = widthPx / 2;
@@ -156,6 +170,7 @@
     const svgEl = el.querySelector('svg');
     if (!svgEl) return;
 
+    // hover -> hoverSeries
     let lastHover = null;
     svgEl.addEventListener('mousemove', (evt) => {
       const t = evt.target;
@@ -173,6 +188,8 @@
         Squirrel.sendToSquirrel('hoverSeries', "", true);
       }
     });
+
+    // click -> selectedSeries
     svgEl.addEventListener('click', (evt) => {
       const t = evt.target;
       if (t && t.tagName === 'path' && t.dataset && t.dataset.name) {
@@ -183,6 +200,7 @@
     });
   }
 
+  // lifecycle
   window.onInitState=e=>{ state=Object.assign({},state,e.detail.state||{}); render(); };
   window.onPropertyChange=e=>{
     const p=Squirrel.getGenericProperty(e.detail.property), v=e.detail.value;

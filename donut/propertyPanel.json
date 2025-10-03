@@ -1,1 +1,200 @@
-[]
+[
+  {
+    "type": "Accordion",
+    "properties": {
+      "name": "Data",
+      "collapsed": false
+    },
+    "children": [
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Series & Values (2 columns: Series, Value):",
+          "allowBinding": true,
+          "allowManualEntry": false,
+          "bindingPropertyName": "dataRange"
+        }
+      },
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Series Colors (1 column of hex values):",
+          "allowBinding": true,
+          "allowManualEntry": false,
+          "bindingPropertyName": "colorRange"
+        }
+      },
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Selected Series (output):",
+          "allowBinding": true,
+          "allowManualEntry": false,
+          "bindingPropertyName": "selectedSeries"
+        }
+      },
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Hover Series (output):",
+          "allowBinding": true,
+          "allowManualEntry": false,
+          "bindingPropertyName": "hoverSeries"
+        }
+      }
+    ]
+  },
+  {
+    "type": "Accordion",
+    "properties": {
+      "name": "Style & Borders",
+      "collapsed": false
+    },
+    "children": [
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Style (full | top-half | bottom-half):",
+          "allowBinding": true,
+          "allowManualEntry": true,
+          "bindingPropertyName": "style"
+        }
+      },
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Inner Hole Size (0.2\u20130.9 of radius):",
+          "allowBinding": true,
+          "allowManualEntry": true,
+          "bindingPropertyName": "innerHoleSize"
+        }
+      },
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Show Tooltips (true/false):",
+          "allowBinding": true,
+          "allowManualEntry": true,
+          "bindingPropertyName": "showTooltips"
+        }
+      },
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Show Border (true/false):",
+          "allowBinding": true,
+          "allowManualEntry": true,
+          "bindingPropertyName": "showBorder"
+        }
+      },
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Border Color:",
+          "allowBinding": true,
+          "allowManualEntry": true,
+          "bindingPropertyName": "borderColor"
+        }
+      },
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Border Width (0\u20136 px):",
+          "allowBinding": true,
+          "allowManualEntry": true,
+          "bindingPropertyName": "borderWidth"
+        }
+      }
+    ]
+  },
+  {
+    "type": "Accordion",
+    "properties": {
+      "name": "Needle",
+      "collapsed": false
+    },
+    "children": [
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Show Needle (true/false):",
+          "allowBinding": true,
+          "allowManualEntry": true,
+          "bindingPropertyName": "showNeedle"
+        }
+      },
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Needle Style (simple | classic):",
+          "allowBinding": true,
+          "allowManualEntry": true,
+          "bindingPropertyName": "needleStyle"
+        }
+      },
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Needle Value (raw or %):",
+          "allowBinding": true,
+          "allowManualEntry": true,
+          "bindingPropertyName": "needleValue"
+        }
+      },
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Needle Mode (raw | percent):",
+          "allowBinding": true,
+          "allowManualEntry": true,
+          "bindingPropertyName": "needleMode"
+        }
+      },
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Needle Color:",
+          "allowBinding": true,
+          "allowManualEntry": true,
+          "bindingPropertyName": "needleColor"
+        }
+      },
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Simple Needle Width (px):",
+          "allowBinding": true,
+          "allowManualEntry": true,
+          "bindingPropertyName": "simpleNeedleWidth"
+        }
+      },
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Simple Needle Length (0.5\u20131.1 of radius):",
+          "allowBinding": true,
+          "allowManualEntry": true,
+          "bindingPropertyName": "simpleNeedleLength"
+        }
+      }
+    ]
+  },
+  {
+    "type": "Accordion",
+    "properties": {
+      "name": "About",
+      "collapsed": true
+    },
+    "children": [
+      {
+        "type": "InputBox",
+        "properties": {
+          "labelName": "Build version:",
+          "allowBinding": false,
+          "allowManualEntry": false,
+          "bindingPropertyName": "buildVersion"
+        }
+      }
+    ]
+  }
+]

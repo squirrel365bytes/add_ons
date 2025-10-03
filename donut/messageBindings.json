@@ -1,1 +1,70 @@
-[]
+[
+  {
+    "property": "dataRange",
+    "direction": "receive"
+  },
+  {
+    "property": "colorRange",
+    "direction": "receive"
+  },
+  {
+    "property": "selectedSeries",
+    "direction": "send"
+  },
+  {
+    "property": "hoverSeries",
+    "direction": "send"
+  },
+  {
+    "property": "style",
+    "direction": "receive"
+  },
+  {
+    "property": "innerHoleSize",
+    "direction": "receive"
+  },
+  {
+    "property": "showTooltips",
+    "direction": "receive"
+  },
+  {
+    "property": "showBorder",
+    "direction": "receive"
+  },
+  {
+    "property": "borderColor",
+    "direction": "receive"
+  },
+  {
+    "property": "borderWidth",
+    "direction": "receive"
+  },
+  {
+    "property": "showNeedle",
+    "direction": "receive"
+  },
+  {
+    "property": "needleStyle",
+    "direction": "receive"
+  },
+  {
+    "property": "needleValue",
+    "direction": "receive"
+  },
+  {
+    "property": "needleMode",
+    "direction": "receive"
+  },
+  {
+    "property": "needleColor",
+    "direction": "receive"
+  },
+  {
+    "property": "simpleNeedleWidth",
+    "direction": "receive"
+  },
+  {
+    "property": "simpleNeedleLength",
+    "direction": "receive"
+  }
+]
