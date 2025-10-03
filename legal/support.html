@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Support & Feedback</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Support and feedback for Squirrel365 beta add-ons." />
+  <style>
+    :root { --fg:#1f2937; --muted:#6b7280; --link:#0ea5e9; --bg:#fff; --card:#f8fafc; }
+    * { box-sizing: border-box; }
+    body {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      color: var(--fg);
+      background: var(--bg);
+      margin: 0;
+      padding: 2rem 1rem;
+    }
+    main {
+      max-width: 840px;
+      margin: 0 auto;
+      background: var(--card);
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 1px 2px rgba(0,0,0,.05);
+    }
+    h1 { margin-top: 0; }
+    p { line-height: 1.6; }
+    .badge {
+      display: inline-block;
+      font-size: .8rem;
+      padding: .25rem .5rem;
+      background: #fff3c4;
+      color: #7c5e10;
+      border: 1px solid #facc15;
+      border-radius: 999px;
+      margin-left: .5rem;
+      vertical-align: middle;
+    }
+    ul { padding-left: 1.25rem; }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      max-width: 840px;
+      margin: 1rem auto 0;
+      display: flex;
+      gap: 1rem;
+      justify-content: space-between;
+      font-size: .9rem;
+      color: var(--muted);
+      padding: 0 .5rem;
+    }
+    .links { display: flex; gap: 1rem; }
+    code {
+      background: #eef2f7;
+      padding: .15rem .35rem;
+      border-radius: 6px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: .95em;
+    }
+    .card {
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <main role="main" aria-labelledby="page-title">
+    <h1 id="page-title">
+      Support & Feedback
+      <span class="badge" aria-label="Beta status">BETA</span>
+    </h1>
+
+    <p>
+      Thanks for trying our Squirrel365 add-ons! These utilities are currently in
+      <strong>beta</strong>, which means we’re actively improving features and fixing edge cases.
+      Your feedback is invaluable.
+    </p>
+
+    <div class="card" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">How to Reach Us</h2>
+      <p>
+        Email: <a href="mailto:squirrel365bytes@gmail.com?subject=Add-on%20Feedback">squirrel365bytes@gmail.com</a>
+      </p>
+      <p>
+        Tip: When reporting an issue, please include:
+      </p>
+      <ul>
+        <li>Add-on name and version (e.g., <code>Beeswarm v1.2</code>)</li>
+        <li>What you expected vs. what happened</li>
+        <li>Steps to reproduce (screenshots or short screen recording help!)</li>
+        <li>Your environment (Squirrel365 version, browser, OS)</li>
+      </ul>
+    </div>
+
+    <h2>What to Expect</h2>
+    <ul>
+      <li>No personal data is collected by our add-ons.</li>
+      <li>No cookies, trackers, or third-party analytics are used.</li>
+      <li>All processing happens locally within your Squirrel365 app/dashboard.</li>
+    </ul>
+
+    <h2>Known Limitations (Beta)</h2>
+    <ul>
+      <li>Behavior may differ across browsers or when bindings are empty.</li>
+      <li>Designer-mode updates may occasionally require a refresh to reflect changes.</li>
+    </ul>
+
+    <h2>Helpful Links</h2>
+    <ul>
+      <li><a href="./privacy.html">Privacy Policy</a></li>
+      <li><a href="./terms.html">Terms of Use</a></li>
+    </ul>
+  </main>
+
+  <footer role="contentinfo" aria-label="Site footer">
+    <div>© <span id="year"></span> Squirrel365 Add-ons</div>
+    <div class="links">
+      <a href="./privacy.html">Privacy</a>
+      <span aria-hidden="true">•</span>
+      <a href="./terms.html">Terms</a>
+      <span aria-hidden="true">•</span>
+      <a href="mailto:squirrel365bytes@gmail.com?subject=Support">Contact</a>
+    </div>
+  </footer>
+
+  <script>
+    // Minimal JS: keep year current, no storage or cookies used.
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
